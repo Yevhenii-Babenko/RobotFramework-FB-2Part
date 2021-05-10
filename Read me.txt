@@ -1,0 +1,25 @@
+
+Hi!
+
+    You need put that command to your cmd:
+
+        py -3 -m robot --variable MAILSLURP_API_KEY:PYT_YOUR_API_KEY_HERE --outputdir results test.robot
+    
+    I use mailslurp-client 11.10.3  https://pypi.org/project/mailslurp-client/   Official webpage https://www.mailslurp.com/
+        
+        pip install mailslurp-client 
+    
+    Just in a case: to get new MAILSLURP_API_KEY visit that webpage and create your API KEY https://app.mailslurp.com/sign-up/
+        MY API KEY IS: 03ef0c9932dd7e022fe878309c2028399403df35cc9ba4f1b591e8efc0ac69f4
+
+
+    This task performs the followig test cases:
+
+        - Go to facebook and create new account.
+    
+    I'm still working on the following test cases:
+    
+    -   Use Gmail library to read confirmation code for new fb account;
+    -   Enter confirmation code into fb confirmation form.
+ 
+

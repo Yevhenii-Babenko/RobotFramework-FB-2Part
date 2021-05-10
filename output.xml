@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 4.0.1 (Python 3.9.4 on win32)" generated="20210509 14:53:42.544" rpa="false" schemaversion="2">
+<suite id="s1" name="Test" source="C:\Users\Бабенко\rf-facebook-testing\test.robot">
+<test id="s1-t1" name="Sign Up With New Email Address">
+<kw name="Create Email Address" library="resource">
+<var>${inbox}</var>
+<kw name="Create Inbox">
+<var>${inbox}</var>
+<msg timestamp="20210509 14:53:42.724" level="FAIL">No keyword with name 'Create Inbox' found.</msg>
+<status status="FAIL" starttime="20210509 14:53:42.724" endtime="20210509 14:53:42.724"/>
+</kw>
+<status status="FAIL" starttime="20210509 14:53:42.721" endtime="20210509 14:53:42.724"/>
+</kw>
+<kw name="Open Browser To Home Page" library="resource">
+<status status="NOT RUN" starttime="20210509 14:53:42.725" endtime="20210509 14:53:42.725"/>
+</kw>
+<kw name="Go To SignUp Page" library="resource">
+<status status="NOT RUN" starttime="20210509 14:53:42.726" endtime="20210509 14:53:42.726"/>
+</kw>
+<kw name="Input Email" library="resource">
+<arg>${inbox.email_address}</arg>
+<status status="NOT RUN" starttime="20210509 14:53:42.726" endtime="20210509 14:53:42.726"/>
+</kw>
+<kw name="Input Password" library="resource">
+<arg>${TEST_PASSWORD}</arg>
+<status status="NOT RUN" starttime="20210509 14:53:42.728" endtime="20210509 14:53:42.728"/>
+</kw>
+<kw name="Submit Credentials" library="resource">
+<status status="NOT RUN" starttime="20210509 14:53:42.728" endtime="20210509 14:53:42.728"/>
+</kw>
+<kw name="Confirm Page Should Be Open" library="resource">
+<status status="NOT RUN" starttime="20210509 14:53:42.729" endtime="20210509 14:53:42.729"/>
+</kw>
+<kw name="Wait For Confirmation Code" library="resource">
+<var>${code}</var>
+<arg>${inbox.id}</arg>
+<status status="NOT RUN" starttime="20210509 14:53:42.729" endtime="20210509 14:53:42.729"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${code} extacted</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" starttime="20210509 14:53:42.730" endtime="20210509 14:53:42.730"/>
+</kw>
+<kw name="Input Confirmation" library="resource">
+<arg>${code}</arg>
+<status status="NOT RUN" starttime="20210509 14:53:42.731" endtime="20210509 14:53:42.731"/>
+</kw>
+<kw name="Submit Confirmation" library="resource">
+<status status="NOT RUN" starttime="20210509 14:53:42.731" endtime="20210509 14:53:42.731"/>
+</kw>
+<kw name="SignIn Page Should Be Open" library="resource">
+<status status="NOT RUN" starttime="20210509 14:53:42.731" endtime="20210509 14:53:42.731"/>
+</kw>
+<kw name="Input Username" library="resource">
+<arg>${inbox.email_address}</arg>
+<status status="NOT RUN" starttime="20210509 14:53:42.732" endtime="20210509 14:53:42.732"/>
+</kw>
+<kw name="Input Password" library="resource">
+<arg>${TEST_PASSWORD}</arg>
+<status status="NOT RUN" starttime="20210509 14:53:42.732" endtime="20210509 14:53:42.732"/>
+</kw>
+<kw name="Submit Login" library="resource">
+<status status="NOT RUN" starttime="20210509 14:53:42.732" endtime="20210509 14:53:42.732"/>
+</kw>
+<kw name="User Page Should Be Open" library="resource">
+<status status="NOT RUN" starttime="20210509 14:53:42.732" endtime="20210509 14:53:42.732"/>
+</kw>
+<status status="FAIL" starttime="20210509 14:53:42.720" endtime="20210509 14:53:42.732">No keyword with name 'Create Inbox' found.</status>
+</test>
+<status status="FAIL" starttime="20210509 14:53:42.545" endtime="20210509 14:53:42.733"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="Test">Test</stat>
+</suite>
+</statistics>
+<errors>
+<msg timestamp="20210509 14:53:42.717" level="ERROR">Error in file 'C:\Users\Бабенко\rf-facebook-testing\resource.robot' on line 3: Importing library 'C:\Users\Бабенко\rf-facebook-testing\lib\MailSlurp.py' failed: ModuleNotFoundError: No module named 'mailslurp_client'
+Traceback (most recent call last):
+  File "C:\Users\Бабенко\rf-facebook-testing\lib\MailSlurp.py", line 1, in &lt;module&gt;
+    import mailslurp_client
+PYTHONPATH:
+  C:\Users\Бабенко\AppData\Local\Programs\Python\Python39\Scripts\robot.exe
+  c:\users\бабенко\appdata\local\programs\python\python39\python39.zip
+  c:\users\бабенко\appdata\local\programs\python\python39\DLLs
+  c:\users\бабенко\appdata\local\programs\python\python39\lib
+  c:\users\бабенко\appdata\local\programs\python\python39
+  C:\Users\Бабенко\AppData\Roaming\Python\Python39\site-packages
+  c:\users\бабенко\appdata\local\programs\python\python39\lib\site-packages</msg>
+</errors>
+</robot>
