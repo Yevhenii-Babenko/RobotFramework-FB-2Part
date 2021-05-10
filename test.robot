@@ -19,11 +19,10 @@ Sign Up With New Email Address
     Select Year
     Select Robot Sex
     Submit Confirmation Button
-    BuiltIn.Sleep    20s
+    BuiltIn.Sleep    80s
 
-    Wait Until Element Contains    //*[@id="content"]/div/div[1]/div/div[1]/div/div/div/div/div/div/div/div/div/div[1]/div/div[1]/span    Введіть код підтвердження timeout=120s
-    Scroll Element Into View    //*[@id="content"]/div/div[1]/div/div[1]/div/div/div/div/div/div/div/div/div/div[2]/div/label
-    Mouse Over     //*[@id="content"]/div/div[1]/div/div[1]/div/div/div/div/div/div/div/div/div/div[2]/div/label
+    Scroll Element Into View    //*[@id="jsc_c_0"]
+    Mouse Over    //*[@id="jsc_c_0"]
 
 
     ${code}    Wait For Confirmation Code   ${inbox.id}

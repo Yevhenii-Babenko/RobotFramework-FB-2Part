@@ -10,7 +10,7 @@ ${SERVER}    www.facebook.com/
 ${BROWSER}    Chrome
 ${DELAY}    0
 ${PLAYGROUND URL}    https://${SERVER}/
-${TEST_PASSWORD}    robRobs123!#!
+${TEST_PASSWORD}    R2!la35n*>
 
 *** Keywords ***
 Create Email Address
@@ -53,10 +53,10 @@ Go To SignUp Page
 
 #my code section
 Input Robot Firstname
-    Press Keys    //*[@name="firstname"]    Maverick
+    Press Keys    //*[@name="firstname"]    Руслан
 
 Input Robot Lastname
-    Press Keys    //*[@name="lastname"]    Bell
+    Press Keys    //*[@name="lastname"]    Русланов
 
 Input The First Email
     [Arguments]    ${username}
@@ -75,13 +75,13 @@ Input Robot Password
     Input Text    //*[@id="password_step_input"]    ${password}
 
 Section Birthday
-    Select From List By Value    //*[@id="day"]    21
+    Select From List By Value    //*[@id="day"]    18
 
 Select Month
     Select From List By Label    //*[@id="month"]    жов
     
 Select Year
-    Select From List By Value    //*[@id="year"]    2001
+    Select From List By Value    //*[@id="year"]    1998
 
 Select Robot Sex
     Select Radio Button    sex    2
@@ -93,4 +93,5 @@ Submit Confirmation Button
 
 Input Confirmation Code
     [Arguments]    ${code}
-    Input Text    //*[@type="text"]    ${code}
+#    Input Text    //*[@type="text"]    ${code}
+    Input Text    //*[@id="jsc_c_0"]    ${code}
