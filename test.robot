@@ -14,17 +14,13 @@ Sign Up With New Email Address
     Input the first email    ${inbox.email_address}
     Input The Confirmation Email    ${inbox.email_address}
     Input Robot Password    ${TEST_PASSWORD}
-    Section Birthday
-    Select Month
-    Select Year
-    Select Robot Sex
+    Input Personal Data
     Submit Confirmation Button
     BuiltIn.Sleep    80s
-
-    Scroll Element Into View    //*[@id="jsc_c_0"]
+    Wait Until Element Is Visible    //*[@id="jsc_c_0"]    timeout=30s    error= The element didn't appear yet
     Mouse Over    //*[@id="jsc_c_0"]
 
 
-    ${code}    Wait For Confirmation Code   ${inbox.id}
+    ${code}    Wait For Confirmation Code    ${inbox.id}
     Log To Console      ${code} extacted
     Input Confirmation Code     ${code}

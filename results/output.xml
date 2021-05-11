@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 4.0.1 (Python 3.9.4 on win32)" generated="20210510 18:37:38.911" rpa="false" schemaversion="2">
+<robot generator="Robot 4.0.1 (Python 3.9.4 on win32)" generated="20210511 14:11:07.157" rpa="false" schemaversion="2">
 <suite id="s1" name="Test" source="C:\Users\Бабенко\rf-facebook-testing\test.robot">
 <test id="s1-t1" name="Sign Up With New Email Address">
 <kw name="Create Email Address" library="resource">
 <var>${inbox}</var>
 <kw name="Create Inbox" library="MailSlurp">
 <var>${inbox}</var>
-<msg timestamp="20210510 18:37:40.302" level="INFO">${inbox} = {'created_at': datetime.datetime(2021, 5, 10, 15, 37, 39, 389000, tzinfo=tzutc()),
+<msg timestamp="20210511 14:11:08.575" level="INFO">${inbox} = {'created_at': datetime.datetime(2021, 5, 11, 11, 11, 7, 418000, tzinfo=tzutc()),
  'description': None,
- 'email_address': 'bdda0561-fd71-4dc4-b859-f0714b1fed7a@mailslurp.com',
- 'expires_at': '2021-05...</msg>
-<status status="PASS" starttime="20210510 18:37:39.151" endtime="20210510 18:37:40.302"/>
+ 'email_address': '9cb45a3c-d723-4e39-9fb7-cf1211620913@mailslurp.com',
+ 'expires_at': '2021-05-...</msg>
+<status status="PASS" starttime="20210511 14:11:07.414" endtime="20210511 14:11:08.575"/>
 </kw>
-<msg timestamp="20210510 18:37:40.302" level="INFO">${inbox} = {'created_at': datetime.datetime(2021, 5, 10, 15, 37, 39, 389000, tzinfo=tzutc()),
+<msg timestamp="20210511 14:11:08.575" level="INFO">${inbox} = {'created_at': datetime.datetime(2021, 5, 11, 11, 11, 7, 418000, tzinfo=tzutc()),
  'description': None,
- 'email_address': 'bdda0561-fd71-4dc4-b859-f0714b1fed7a@mailslurp.com',
- 'expires_at': '2021-05...</msg>
-<status status="PASS" starttime="20210510 18:37:39.151" endtime="20210510 18:37:40.302"/>
+ 'email_address': '9cb45a3c-d723-4e39-9fb7-cf1211620913@mailslurp.com',
+ 'expires_at': '2021-05-...</msg>
+<status status="PASS" starttime="20210511 14:11:07.414" endtime="20210511 14:11:08.575"/>
 </kw>
 <kw name="Open Browser To Home Page" library="resource">
 <kw name="Evaluate" library="BuiltIn">
@@ -24,105 +24,105 @@
 <arg>sys.modules['selenium.webdriver.chrome.options'].Options()</arg>
 <arg>sys</arg>
 <doc>Evaluates the given expression in Python and returns the result.</doc>
-<msg timestamp="20210510 18:37:40.303" level="INFO">${options} = &lt;selenium.webdriver.chrome.options.Options object at 0x00000208BFF90F40&gt;</msg>
-<status status="PASS" starttime="20210510 18:37:40.303" endtime="20210510 18:37:40.303"/>
+<msg timestamp="20210511 14:11:08.581" level="INFO">${options} = &lt;selenium.webdriver.chrome.options.Options object at 0x0000014E54470DF0&gt;</msg>
+<status status="PASS" starttime="20210511 14:11:08.581" endtime="20210511 14:11:08.581"/>
 </kw>
 <kw name="Call Method" library="BuiltIn">
 <arg>${options}</arg>
 <arg>add_argument</arg>
 <arg>--disable-notifications</arg>
 <doc>Calls the named method of the given object with the provided arguments.</doc>
-<status status="PASS" starttime="20210510 18:37:40.304" endtime="20210510 18:37:40.304"/>
+<status status="PASS" starttime="20210511 14:11:08.581" endtime="20210511 14:11:08.582"/>
 </kw>
 <kw name="Create Webdriver" library="SeleniumLibrary">
 <var>${driver}</var>
 <arg>Chrome</arg>
 <arg>options=${options}</arg>
 <doc>Creates an instance of Selenium WebDriver.</doc>
-<msg timestamp="20210510 18:37:40.304" level="INFO">Creating an instance of the Chrome WebDriver.</msg>
-<msg timestamp="20210510 18:37:41.408" level="INFO">${driver} = 1</msg>
-<status status="PASS" starttime="20210510 18:37:40.304" endtime="20210510 18:37:41.408"/>
+<msg timestamp="20210511 14:11:08.582" level="INFO">Creating an instance of the Chrome WebDriver.</msg>
+<msg timestamp="20210511 14:11:09.740" level="INFO">${driver} = 1</msg>
+<status status="PASS" starttime="20210511 14:11:08.582" endtime="20210511 14:11:09.740"/>
 </kw>
 <kw name="Maximize Browser Window" library="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" starttime="20210510 18:37:41.409" endtime="20210510 18:37:41.539"/>
+<status status="PASS" starttime="20210511 14:11:09.741" endtime="20210511 14:11:09.883"/>
 </kw>
 <kw name="Set Selenium Speed" library="SeleniumLibrary">
 <arg>${DELAY}</arg>
 <doc>Sets the delay that is waited after each Selenium command.</doc>
-<status status="PASS" starttime="20210510 18:37:41.539" endtime="20210510 18:37:41.540"/>
+<status status="PASS" starttime="20210511 14:11:09.884" endtime="20210511 14:11:09.885"/>
 </kw>
 <kw name="Go To" library="SeleniumLibrary">
 <arg>${PLAYGROUND URL}</arg>
 <doc>Navigates the current browser window to the provided ``url``.</doc>
-<msg timestamp="20210510 18:37:41.540" level="INFO">Opening url 'https://www.facebook.com//'</msg>
-<status status="PASS" starttime="20210510 18:37:41.540" endtime="20210510 18:37:43.033"/>
+<msg timestamp="20210511 14:11:09.886" level="INFO">Opening url 'https://www.facebook.com//'</msg>
+<status status="PASS" starttime="20210511 14:11:09.885" endtime="20210511 14:11:11.445"/>
 </kw>
 <kw name="Home Page Should Be Open" library="resource">
 <kw name="Title Should Be" library="SeleniumLibrary">
 <arg>Facebook — увійдіть або зареєструйтеся</arg>
 <doc>Verifies that the current page title equals ``title``.</doc>
-<msg timestamp="20210510 18:37:43.040" level="INFO">Page title is 'Facebook — увійдіть або зареєструйтеся'.</msg>
-<status status="PASS" starttime="20210510 18:37:43.034" endtime="20210510 18:37:43.040"/>
+<msg timestamp="20210511 14:11:11.452" level="INFO">Page title is 'Facebook — увійдіть або зареєструйтеся'.</msg>
+<status status="PASS" starttime="20210511 14:11:11.446" endtime="20210511 14:11:11.452"/>
 </kw>
-<status status="PASS" starttime="20210510 18:37:43.033" endtime="20210510 18:37:43.040"/>
+<status status="PASS" starttime="20210511 14:11:11.445" endtime="20210511 14:11:11.452"/>
 </kw>
-<status status="PASS" starttime="20210510 18:37:40.303" endtime="20210510 18:37:43.040"/>
+<status status="PASS" starttime="20210511 14:11:08.575" endtime="20210511 14:11:11.452"/>
 </kw>
 <kw name="Go To SignUp Page" library="resource">
 <kw name="Go To" library="SeleniumLibrary">
 <arg>${PLAYGROUND URL}</arg>
 <doc>Navigates the current browser window to the provided ``url``.</doc>
-<msg timestamp="20210510 18:37:43.041" level="INFO">Opening url 'https://www.facebook.com//'</msg>
-<status status="PASS" starttime="20210510 18:37:43.041" endtime="20210510 18:37:43.615"/>
+<msg timestamp="20210511 14:11:11.453" level="INFO">Opening url 'https://www.facebook.com//'</msg>
+<status status="PASS" starttime="20210511 14:11:11.453" endtime="20210511 14:11:12.133"/>
 </kw>
 <kw name="Home Page Should Be Open" library="resource">
 <kw name="Title Should Be" library="SeleniumLibrary">
 <arg>Facebook — увійдіть або зареєструйтеся</arg>
 <doc>Verifies that the current page title equals ``title``.</doc>
-<msg timestamp="20210510 18:37:43.619" level="INFO">Page title is 'Facebook — увійдіть або зареєструйтеся'.</msg>
-<status status="PASS" starttime="20210510 18:37:43.616" endtime="20210510 18:37:43.619"/>
+<msg timestamp="20210511 14:11:12.136" level="INFO">Page title is 'Facebook — увійдіть або зареєструйтеся'.</msg>
+<status status="PASS" starttime="20210511 14:11:12.133" endtime="20210511 14:11:12.137"/>
 </kw>
-<status status="PASS" starttime="20210510 18:37:43.615" endtime="20210510 18:37:43.619"/>
+<status status="PASS" starttime="20210511 14:11:12.133" endtime="20210511 14:11:12.137"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>//*[@data-testid="open-registration-form-button"]</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20210510 18:37:43.619" level="INFO">Clicking element '//*[@data-testid="open-registration-form-button"]'.</msg>
-<status status="PASS" starttime="20210510 18:37:43.619" endtime="20210510 18:37:43.667"/>
+<msg timestamp="20210511 14:11:12.137" level="INFO">Clicking element '//*[@data-testid="open-registration-form-button"]'.</msg>
+<status status="PASS" starttime="20210511 14:11:12.137" endtime="20210511 14:11:12.184"/>
 </kw>
 <kw name="SignUp Page Should Be Open" library="resource">
 <kw name="Wait Until Element Contains" library="SeleniumLibrary">
 <arg>//*[@id="facebook"]/body/div[3]/div[2]/div/div/div[1]</arg>
 <arg>Зареєструватися</arg>
 <doc>Waits until the element ``locator`` contains ``text``.</doc>
-<status status="PASS" starttime="20210510 18:37:43.669" endtime="20210510 18:37:44.356"/>
+<status status="PASS" starttime="20210511 14:11:12.185" endtime="20210511 14:11:12.709"/>
 </kw>
-<status status="PASS" starttime="20210510 18:37:43.668" endtime="20210510 18:37:44.357"/>
+<status status="PASS" starttime="20210511 14:11:12.184" endtime="20210511 14:11:12.710"/>
 </kw>
-<status status="PASS" starttime="20210510 18:37:43.041" endtime="20210510 18:37:44.357"/>
+<status status="PASS" starttime="20210511 14:11:11.453" endtime="20210511 14:11:12.710"/>
 </kw>
 <kw name="Input Robot Firstname" library="resource">
 <kw name="Press Keys" library="SeleniumLibrary">
 <arg>//*[@name="firstname"]</arg>
-<arg>Руслан</arg>
+<arg>Петро</arg>
 <doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
-<msg timestamp="20210510 18:37:44.359" level="INFO">Sending key(s) ('Руслан',) to //*[@name="firstname"] element.</msg>
-<msg timestamp="20210510 18:37:44.655" level="INFO">Sending keys Руслан</msg>
-<status status="PASS" starttime="20210510 18:37:44.359" endtime="20210510 18:37:44.679"/>
+<msg timestamp="20210511 14:11:12.712" level="INFO">Sending key(s) ('Петро',) to //*[@name="firstname"] element.</msg>
+<msg timestamp="20210511 14:11:13.010" level="INFO">Sending keys Петро</msg>
+<status status="PASS" starttime="20210511 14:11:12.711" endtime="20210511 14:11:13.037"/>
 </kw>
-<status status="PASS" starttime="20210510 18:37:44.358" endtime="20210510 18:37:44.679"/>
+<status status="PASS" starttime="20210511 14:11:12.711" endtime="20210511 14:11:13.037"/>
 </kw>
 <kw name="Input Robot Lastname" library="resource">
 <kw name="Press Keys" library="SeleniumLibrary">
 <arg>//*[@name="lastname"]</arg>
-<arg>Русланов</arg>
+<arg>Рубан</arg>
 <doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
-<msg timestamp="20210510 18:37:44.680" level="INFO">Sending key(s) ('Русланов',) to //*[@name="lastname"] element.</msg>
-<msg timestamp="20210510 18:37:44.968" level="INFO">Sending keys Русланов</msg>
-<status status="PASS" starttime="20210510 18:37:44.680" endtime="20210510 18:37:44.996"/>
+<msg timestamp="20210511 14:11:13.039" level="INFO">Sending key(s) ('Рубан',) to //*[@name="lastname"] element.</msg>
+<msg timestamp="20210511 14:11:13.337" level="INFO">Sending keys Рубан</msg>
+<status status="PASS" starttime="20210511 14:11:13.038" endtime="20210511 14:11:13.358"/>
 </kw>
-<status status="PASS" starttime="20210510 18:37:44.679" endtime="20210510 18:37:44.996"/>
+<status status="PASS" starttime="20210511 14:11:13.038" endtime="20210511 14:11:13.358"/>
 </kw>
 <kw name="Input The First Email" library="resource">
 <arg>${inbox.email_address}</arg>
@@ -130,20 +130,20 @@
 <arg>//*[@name="reg_email__"]</arg>
 <arg>${username}</arg>
 <doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
-<msg timestamp="20210510 18:37:44.998" level="INFO">Sending key(s) ('bdda0561-fd71-4dc4-b859-f0714b1fed7a@mailslurp.com',) to //*[@name="reg_email__"] element.</msg>
-<msg timestamp="20210510 18:37:45.287" level="INFO">Sending keys bdda0561-fd71-4dc4-b859-f0714b1fed7a@mailslurp.com</msg>
-<status status="PASS" starttime="20210510 18:37:44.997" endtime="20210510 18:37:45.473"/>
+<msg timestamp="20210511 14:11:13.360" level="INFO">Sending key(s) ('9cb45a3c-d723-4e39-9fb7-cf1211620913@mailslurp.com',) to //*[@name="reg_email__"] element.</msg>
+<msg timestamp="20210511 14:11:13.643" level="INFO">Sending keys 9cb45a3c-d723-4e39-9fb7-cf1211620913@mailslurp.com</msg>
+<status status="PASS" starttime="20210511 14:11:13.359" endtime="20210511 14:11:13.839"/>
 </kw>
 <kw name="The Confirmation Email Should Be Present" library="resource">
 <kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
 <arg>//*[@name="reg_email_confirmation__"]</arg>
 <arg>timeout=15s</arg>
 <doc>Waits until the element ``locator`` is enabled.</doc>
-<status status="PASS" starttime="20210510 18:37:45.474" endtime="20210510 18:37:45.495"/>
+<status status="PASS" starttime="20210511 14:11:13.839" endtime="20210511 14:11:13.859"/>
 </kw>
-<status status="PASS" starttime="20210510 18:37:45.473" endtime="20210510 18:37:45.495"/>
+<status status="PASS" starttime="20210511 14:11:13.839" endtime="20210511 14:11:13.859"/>
 </kw>
-<status status="PASS" starttime="20210510 18:37:44.997" endtime="20210510 18:37:45.495"/>
+<status status="PASS" starttime="20210511 14:11:13.358" endtime="20210511 14:11:13.859"/>
 </kw>
 <kw name="Input The Confirmation Email" library="resource">
 <arg>${inbox.email_address}</arg>
@@ -151,11 +151,11 @@
 <arg>//*[@name="reg_email_confirmation__"]</arg>
 <arg>${username}</arg>
 <doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
-<msg timestamp="20210510 18:37:45.496" level="INFO">Sending key(s) ('bdda0561-fd71-4dc4-b859-f0714b1fed7a@mailslurp.com',) to //*[@name="reg_email_confirmation__"] element.</msg>
-<msg timestamp="20210510 18:37:45.781" level="INFO">Sending keys bdda0561-fd71-4dc4-b859-f0714b1fed7a@mailslurp.com</msg>
-<status status="PASS" starttime="20210510 18:37:45.496" endtime="20210510 18:37:45.916"/>
+<msg timestamp="20210511 14:11:13.861" level="INFO">Sending key(s) ('9cb45a3c-d723-4e39-9fb7-cf1211620913@mailslurp.com',) to //*[@name="reg_email_confirmation__"] element.</msg>
+<msg timestamp="20210511 14:11:14.177" level="INFO">Sending keys 9cb45a3c-d723-4e39-9fb7-cf1211620913@mailslurp.com</msg>
+<status status="PASS" starttime="20210511 14:11:13.860" endtime="20210511 14:11:14.427"/>
 </kw>
-<status status="PASS" starttime="20210510 18:37:45.495" endtime="20210510 18:37:45.917"/>
+<status status="PASS" starttime="20210511 14:11:13.859" endtime="20210511 14:11:14.427"/>
 </kw>
 <kw name="Input Robot Password" library="resource">
 <arg>${TEST_PASSWORD}</arg>
@@ -163,97 +163,96 @@
 <arg>//*[@id="password_step_input"]</arg>
 <arg>${password}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20210510 18:37:45.918" level="INFO">Typing text 'R2!la35n*&gt;' into text field '//*[@id="password_step_input"]'.</msg>
-<status status="PASS" starttime="20210510 18:37:45.917" endtime="20210510 18:37:45.995"/>
+<msg timestamp="20210511 14:11:14.429" level="INFO">Typing text 'R2!la35n*&gt;' into text field '//*[@id="password_step_input"]'.</msg>
+<status status="PASS" starttime="20210511 14:11:14.429" endtime="20210511 14:11:14.516"/>
 </kw>
-<status status="PASS" starttime="20210510 18:37:45.917" endtime="20210510 18:37:45.995"/>
+<status status="PASS" starttime="20210511 14:11:14.428" endtime="20210511 14:11:14.516"/>
 </kw>
-<kw name="Section Birthday" library="resource">
+<kw name="Input Personal Data" library="resource">
 <kw name="Select From List By Value" library="SeleniumLibrary">
 <arg>//*[@id="day"]</arg>
-<arg>21</arg>
+<arg>18</arg>
 <doc>Selects options from selection list ``locator`` by ``values``.</doc>
-<msg timestamp="20210510 18:37:45.996" level="INFO">Selecting options from selection list '//*[@id="day"]' by value 21.</msg>
-<status status="PASS" starttime="20210510 18:37:45.996" endtime="20210510 18:37:46.057"/>
+<msg timestamp="20210511 14:11:14.517" level="INFO">Selecting options from selection list '//*[@id="day"]' by value 18.</msg>
+<status status="PASS" starttime="20210511 14:11:14.517" endtime="20210511 14:11:14.588"/>
 </kw>
-<status status="PASS" starttime="20210510 18:37:45.996" endtime="20210510 18:37:46.057"/>
-</kw>
-<kw name="Select Month" library="resource">
 <kw name="Select From List By Label" library="SeleniumLibrary">
 <arg>//*[@id="month"]</arg>
 <arg>жов</arg>
 <doc>Selects options from selection list ``locator`` by ``labels``.</doc>
-<msg timestamp="20210510 18:37:46.058" level="INFO">Selecting options from selection list '//*[@id="month"]' by label жов.</msg>
-<status status="PASS" starttime="20210510 18:37:46.058" endtime="20210510 18:37:46.126"/>
+<msg timestamp="20210511 14:11:14.588" level="INFO">Selecting options from selection list '//*[@id="month"]' by label жов.</msg>
+<status status="PASS" starttime="20210511 14:11:14.588" endtime="20210511 14:11:14.649"/>
 </kw>
-<status status="PASS" starttime="20210510 18:37:46.058" endtime="20210510 18:37:46.126"/>
-</kw>
-<kw name="Select Year" library="resource">
 <kw name="Select From List By Value" library="SeleniumLibrary">
 <arg>//*[@id="year"]</arg>
-<arg>2001</arg>
+<arg>1998</arg>
 <doc>Selects options from selection list ``locator`` by ``values``.</doc>
-<msg timestamp="20210510 18:37:46.127" level="INFO">Selecting options from selection list '//*[@id="year"]' by value 2001.</msg>
-<status status="PASS" starttime="20210510 18:37:46.127" endtime="20210510 18:37:46.190"/>
+<msg timestamp="20210511 14:11:14.649" level="INFO">Selecting options from selection list '//*[@id="year"]' by value 1998.</msg>
+<status status="PASS" starttime="20210511 14:11:14.649" endtime="20210511 14:11:14.707"/>
 </kw>
-<status status="PASS" starttime="20210510 18:37:46.126" endtime="20210510 18:37:46.191"/>
-</kw>
-<kw name="Select Robot Sex" library="resource">
 <kw name="Select Radio Button" library="SeleniumLibrary">
 <arg>sex</arg>
 <arg>2</arg>
 <doc>Sets the radio button group ``group_name`` to ``value``.</doc>
-<msg timestamp="20210510 18:37:46.192" level="INFO">Selecting '2' from radio button 'sex'.</msg>
-<status status="PASS" starttime="20210510 18:37:46.192" endtime="20210510 18:37:46.246"/>
+<msg timestamp="20210511 14:11:14.707" level="INFO">Selecting '2' from radio button 'sex'.</msg>
+<status status="PASS" starttime="20210511 14:11:14.707" endtime="20210511 14:11:14.760"/>
 </kw>
-<status status="PASS" starttime="20210510 18:37:46.192" endtime="20210510 18:37:46.246"/>
+<status status="PASS" starttime="20210511 14:11:14.516" endtime="20210511 14:11:14.761"/>
 </kw>
 <kw name="Submit Confirmation Button" library="resource">
 <kw name="Scroll Element Into View" library="SeleniumLibrary">
 <arg>//*[@name="websubmit"]</arg>
 <doc>Scrolls the element identified by ``locator`` into view.</doc>
-<status status="PASS" starttime="20210510 18:37:46.247" endtime="20210510 18:37:46.521"/>
+<status status="PASS" starttime="20210511 14:11:14.762" endtime="20210511 14:11:15.046"/>
 </kw>
 <kw name="Click Button" library="SeleniumLibrary">
 <arg>//*[@name="websubmit"]</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<msg timestamp="20210510 18:37:46.521" level="INFO">Clicking button '//*[@name="websubmit"]'.</msg>
-<status status="PASS" starttime="20210510 18:37:46.521" endtime="20210510 18:37:46.581"/>
+<msg timestamp="20210511 14:11:15.047" level="INFO">Clicking button '//*[@name="websubmit"]'.</msg>
+<status status="PASS" starttime="20210511 14:11:15.046" endtime="20210511 14:11:15.102"/>
 </kw>
-<status status="PASS" starttime="20210510 18:37:46.246" endtime="20210510 18:37:46.581"/>
+<status status="PASS" starttime="20210511 14:11:14.761" endtime="20210511 14:11:15.102"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>80s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="FAIL" starttime="20210510 18:37:46.582" endtime="20210510 18:38:29.793"/>
+<msg timestamp="20210511 14:12:35.114" level="INFO">Slept 1 minute 20 seconds</msg>
+<status status="PASS" starttime="20210511 14:11:15.102" endtime="20210511 14:12:35.114"/>
 </kw>
-<kw name="Scroll Element Into View" library="SeleniumLibrary">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>//*[@id="jsc_c_0"]</arg>
-<doc>Scrolls the element identified by ``locator`` into view.</doc>
-<status status="NOT RUN" starttime="20210510 18:38:29.793" endtime="20210510 18:38:29.793"/>
+<arg>timeout=30s</arg>
+<arg>error= The element didn't appear yet</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="FAIL" starttime="20210511 14:13:02.893" endtime="20210511 14:13:02.894"/>
+</kw>
+<msg timestamp="20210511 14:13:02.894" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Execution terminated by signal</msg>
+<status status="FAIL" starttime="20210511 14:12:35.114" endtime="20210511 14:13:02.896"/>
 </kw>
 <kw name="Mouse Over" library="SeleniumLibrary">
 <arg>//*[@id="jsc_c_0"]</arg>
 <doc>Simulates hovering the mouse over the element ``locator``.</doc>
-<status status="NOT RUN" starttime="20210510 18:38:29.806" endtime="20210510 18:38:29.806"/>
+<status status="NOT RUN" starttime="20210511 14:13:02.900" endtime="20210511 14:13:02.900"/>
 </kw>
 <kw name="Wait For Confirmation Code" library="resource">
 <var>${code}</var>
 <arg>${inbox.id}</arg>
-<status status="NOT RUN" starttime="20210510 18:38:29.807" endtime="20210510 18:38:29.808"/>
+<status status="NOT RUN" starttime="20210511 14:13:02.901" endtime="20210511 14:13:02.902"/>
 </kw>
 <kw name="Log To Console" library="BuiltIn">
 <arg>${code} extacted</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="NOT RUN" starttime="20210510 18:38:29.808" endtime="20210510 18:38:29.808"/>
+<status status="NOT RUN" starttime="20210511 14:13:02.902" endtime="20210511 14:13:02.902"/>
 </kw>
 <kw name="Input Confirmation Code" library="resource">
 <arg>${code}</arg>
-<status status="NOT RUN" starttime="20210510 18:38:29.809" endtime="20210510 18:38:29.809"/>
+<status status="NOT RUN" starttime="20210511 14:13:02.902" endtime="20210511 14:13:02.902"/>
 </kw>
-<status status="FAIL" starttime="20210510 18:37:39.150" endtime="20210510 18:38:29.810">Execution terminated by signal</status>
+<status status="FAIL" starttime="20210511 14:11:07.413" endtime="20210511 14:13:02.903">Execution terminated by signal</status>
 </test>
-<status status="FAIL" starttime="20210510 18:37:38.912" endtime="20210510 18:38:29.812"/>
+<status status="FAIL" starttime="20210511 14:11:07.157" endtime="20210511 14:13:02.905"/>
 </suite>
 <statistics>
 <total>
@@ -266,5 +265,6 @@
 </suite>
 </statistics>
 <errors>
+<msg timestamp="20210511 14:13:02.894" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Execution terminated by signal</msg>
 </errors>
 </robot>

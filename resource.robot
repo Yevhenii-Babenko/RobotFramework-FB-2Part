@@ -53,10 +53,10 @@ Go To SignUp Page
 
 #my code section
 Input Robot Firstname
-    Press Keys    //*[@name="firstname"]    Руслан
+    Press Keys    //*[@name="firstname"]    Петро
 
 Input Robot Lastname
-    Press Keys    //*[@name="lastname"]    Русланов
+    Press Keys    //*[@name="lastname"]    Рубан
 
 Input The First Email
     [Arguments]    ${username}
@@ -74,16 +74,10 @@ Input Robot Password
     [Arguments]    ${password}
     Input Text    //*[@id="password_step_input"]    ${password}
 
-Section Birthday
+Input Personal Data
     Select From List By Value    //*[@id="day"]    18
-
-Select Month
     Select From List By Label    //*[@id="month"]    жов
-    
-Select Year
     Select From List By Value    //*[@id="year"]    1998
-
-Select Robot Sex
     Select Radio Button    sex    2
 
 Submit Confirmation Button

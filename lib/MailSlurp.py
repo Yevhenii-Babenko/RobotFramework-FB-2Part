@@ -24,12 +24,12 @@ class MailSlurp(object):
         with mailslurp_client.ApiClient(self.configuration) as api_client:
             # create an inbox using the inbox controller
             api_instance = mailslurp_client.WaitForControllerApi(api_client)
-            email = api_instance.wait_for_latest_email(inbox_id=inbox_id, timeout=60000, unread_only=True)
+            email = api_instance.wait_for_latest_email(inbox_id=inbox_id, timeout=80000, unread_only=True)
             return email
 
     # parse the confirmation code from an email body (adjust for your own use)
     def extract_email_content(self, email_body):
-        regex = 'FB-([0-9]{6})'
+        regex = 'FB-([0-9]{5})'
         pattern = re.compile(regex)
         matches = pattern.match(email_body)
         content = matches.group(1)
